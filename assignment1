@@ -1,0 +1,81 @@
+salary = float(input("Enter your salary: "))
+years = int(input("Enter your years of service: "))
+
+if years > 5:
+    bonus = salary * 0.05
+    print("Net bonus amount is:", bonus)
+else:
+    print("No bonus ")
+
+age = int( input("Enter your age:"))
+
+if age > 17:
+    print("Eligible for voting")
+else:
+    print("Not eligible for voting")
+
+num = int(input("Enter a  number: "))
+
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+num = int(input("Enter a number:"))
+
+if num % 7==0:
+    print("Number is divisible by 7")
+else:
+    print("Number is not divisible by 7")
+
+num = int(input("Enter a number:"))
+
+if num % 5==0:
+     print("Hello")
+else:
+    print("Bye")
+
+length = float(input("Enter length:"))
+breadth = float(input("Enter breadth:"))
+if length == breadth:
+    print("It is a square")
+else:
+    print("It is a rectangle")
+
+num1 = int(input("Enter  first number:"))
+num2 = int(input("Enter second number:"))
+
+if num1 > num2:
+    print(" Greatest number is:", 80)
+else:
+    print("Greatest number is:", 70)
+
+marks = int(input("Enter your marks: "))
+
+if marks <=25:
+    print("F")
+elif marks <=45:
+    print("E")
+elif marks <=50:
+    print("D")
+elif marks <=60:
+    print("C")
+elif marks <=80:
+    print("B")
+else:
+    print("A")
+
+age = int(input("Enter your age: "))
+gender = input("Enter your gender,  male or female  : ")
+marital = input("Enter marial status married  or unmarried : ")
+
+if gender ==  "female":
+    print("you will only Work in urban areas")
+
+elif gender == "male":
+    if age >= 20 and age < 40:
+        print(" you can work  anywhere")
+    elif age >= 40 and age <= 60:
+        print("you  will only Work in urban  areas")
+    else:
+        print("ERROR")
