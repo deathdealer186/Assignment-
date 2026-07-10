@@ -1,0 +1,61 @@
+Qno.1
+
+print("Name: anas \nFather Name: Asif \nDate of Birth 04/10/2011 ")
+
+Qno.2
+
+name = "anas"
+father_name = "Asif"
+age = 14
+country = "Pakistan"
+city = "Karachi"
+print("My name is", name)
+print("My father's name is", father_name)
+print("I am", age, "years old")
+print("I live in ", city + ",", country )
+
+Qno.3
+
+a = 10
+b = 3
+
+print("a + b =", a + b)
+print("a - b =", a - b)
+print("a * b =", a * b)
+print("a / b =", a / b)
+print("a % b =", a % b)
+print("a ** b =", a ** b)
+
+x = 5
+x += 2; print("x += 2 =", x) 
+x -= 1; print("x -= 1 =", x)
+x *= 3; print("x *= 3 =", x)
+x /= 2; print("x /= 2 =", x)
+x **= 2; print("x **= 2 =", x)
+x %= 2; print("x %= 5 =", x)
+
+print("a == b :", a == b)
+print("a != b =", a != b)
+print("a > b :", a > b)
+print("a < b :", a < b)
+print("a >= b :", a >= b)
+print("a <= b :", a <= b)
+
+c = True
+d = False
+
+
+Qno.4
+
+maths = int(input("enter the marks of maths"))
+islamiat = int(input("Enter the marks of islamiat"))
+english = int(input("enter the number of english"))
+
+
+total_marks = 300 
+obtained_marks = maths + islamiat + english 
+percentage =  (obtained_marks/total_marks * 100)
+print(percentage)
+print("c and d :", c and d)
+print("c or d :", c or d)
+print("not c :", not c)
