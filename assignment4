@@ -1,0 +1,162 @@
+Qno1.
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+
+circle = Circle(5)
+
+print("area:", circle.area())
+print("perimeter:", circle.perimeter())
+
+Qno2.
+
+import datetime
+
+class Person:
+    def __init__ (self,  name, country, birth_year ):
+        self.name =  name
+        self.country = country
+        self.birth_year= birth_year
+
+    def age(self):
+        current_year = datetime.date.today().year
+        return current_year - self.birth_year
+
+
+person1 =Person( "anas","Pakistan" , 2011)
+
+print("Name:", person1.name)
+print("Country:", person1.country)
+print("Birth Year:", person1.birth_year)
+print("Age:", person1.age(), "years")
+
+Qno3.
+
+class Calculator:
+    def add(self,a,  b):
+        return a +  b
+
+    def subtract(self, a, b):
+        return a- b
+
+    def multiply(self, a, b):
+        return a *  b
+
+    def divide(self, a,  b):
+        return a /  b
+
+cal =  Calculator ()
+
+print("Addition =",  cal.add (13,3 ))
+print("Subtraction =",  cal.subtract (30, 5))
+print("Multiplication =",cal.multiply (8, 4))
+print("Division =", cal.divide(8,2 ))
+
+Qno4.
+
+students_name= ["anas", "ahmed", "bilal", "ibrahim", "hamza",
+            "aysha", "Fatima", "zain", "hunain", "saher",
+            "mustafa", "hania", "usman", "mehmoona", "shuhaib"]
+
+for name in students :
+    print (name)
+
+Qno5.
+
+numbers = [1,2 ,3,4, 5,6, 7,8,9,10]
+
+for num in numbers :
+    if num % 2 ==  0:
+        print (num)
+
+Qno6.
+
+numbers = [ 32, 89, 23, 37, 88 ]
+
+largest = numbers [0]
+smallest = numbers [0]
+
+for num in numbers:
+    if num  >  largest:
+       largest= num
+    if num  <  smallest:
+       smallest = num
+
+print("Largest number:",largest)
+print("Smallest number:", smallest)
+
+Qno7.
+
+fruits = ["Apple" , "Banana"  ,  "Apple", "Orange","Apple"]
+
+count = 0
+
+for fruit in fruits:
+    if fruit ==  "Apple":
+        count = count +  1
+
+print("Apple appears",  count,"times")
+
+Qno8.
+
+numbers = [54,78,9,37,87,90] 
+
+numbers.sort()
+print("Ascending order:",numbers)
+
+numbers.sort(reverse=True)
+print("Descending order:",numbers)
+
+  Qno9.
+
+list1 = [10,40,60,80,100]
+list2 = list1.copy ()
+
+print("list1:",list1)
+print("list2:",list2)
+
+Qno10.
+
+students = [
+           ["anas", 15],
+           ["bilal", 18],
+           ["mustafa", 13]]
+print("All student names:")
+for student in students:
+    print(student[0])
+print("All student ages:")
+for student in students:
+    print(student[1])
+
+Qno11.
+
+numbers = [10,20,78,50,58,65,70,80,99,100]
+
+print("Total  numbers:", len(numbers))
+print("Sum:", sum(numbers))
+print("Average:" , sum(numbers) / len(numbers))
+print("Maximum value:", max(numbers))
+print("Minimum value:", min(numbers))
+
+Qno12.
+
+numbers = [10,20,30,40,50 ]
+
+numbers.append(60)
+print("After append:", numbers)
+
+numbers.insert(2,25)
+print("After insert:", numbers)
+
+numbers.remove(40) 
+print("After remove:",  numbers)
+
+numbers.pop()
+print("After pop:", numbers)
